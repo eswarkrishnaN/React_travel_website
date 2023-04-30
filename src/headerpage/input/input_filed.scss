@@ -1,0 +1,78 @@
+:root{
+    --primaryColor: hsl(199,100%,33%);
+    --backColor: hsl(0,0%,100%);
+    --textColor : hsl(197, 88%, 3%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText:rgb(190,190,190);
+    --buttonColor:  hsl(199, 57%, 71%);
+    --inputColor:rgb(239,239,239);
+    --bodyColor: rgb(240,240,240);
+    --cardBG : rgb(225,225,235);
+    --secondarycolor: linear-gradient(to-left, hsl(187, 42%, 25%),hsl(199, 58%, 64%));
+    --gradienColor: linear-gradient(to-right, hsl(187, 77%, 40%),hsl(199, 84%, 53%));
+  }
+  
+
+.cardDiv{
+    position: relative;
+    padding: 2rem 1rem;
+    background: #fff;
+    border-radius: 10px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    label{
+        display: block;
+        color: black;
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .icon{
+        color: black;
+        margin-right: 5px;
+        
+    }
+    .input{
+        height: 40px;
+        padding: 0 1 rem;
+        background: var(--inputColor);
+        border-radius: 4rem;
+        padding-left:15px ;
+        font-size: 15px;
+     
+        input{
+            border: none;
+            background: none;
+            outline: none;
+            width: 100%;
+            font-size: 13px;
+            font-weight: 500;
+            
+            &::placeholder{
+                font-size: 18px;
+            }
+        }
+
+    }
+    .searchoptions{
+        position: absolute;
+        background: var(    --primaryColor        );
+        border-radius: 3rem;
+        color: black;
+        bottom: -0.7rem;
+        padding: 5px 1rem;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+    }
+    
+    .searchoptions:hover{
+        background:hsl(199, 86%, 75%) ;
+        color: #c4eaf1;
+        .icon:hover{
+            color: #c4eaf1;
+        }
+    }
+}

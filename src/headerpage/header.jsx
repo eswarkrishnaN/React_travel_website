@@ -1,6 +1,6 @@
 import "./header.css";
 import sea from "../data/sea.mp4";
-import Input  from "./input_fields";
+import Input  from "../headerpage/input/input_fields";
 
 const Header = ()=>{
     return(
