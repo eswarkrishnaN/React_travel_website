@@ -53,7 +53,7 @@ const Input = ()=>{
                 </div>
 
         </div>
-        <Icons></Icons>
+      
                        
         </div>
     )

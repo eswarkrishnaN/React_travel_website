@@ -20,9 +20,10 @@ const Header = ()=>{
                     </h1>
                 </div>
                 <Input></Input>
-                <Icons></Icons>
-                    
+              
+                <Icons></Icons>      
             </div>
+            
         </section>
     );
 };
