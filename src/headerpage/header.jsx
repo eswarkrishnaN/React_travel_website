@@ -1,6 +1,7 @@
 import "./header.css";
 import sea from "../data/sea.mp4";
 import Input  from "../headerpage/input/input_fields";
+import Icons from "../headerpage/icons/icons"
 
 const Header = ()=>{
     return(
@@ -18,7 +19,7 @@ const Header = ()=>{
                     </h1>
                 </div>
                 <Input></Input>
- 
+                <Icons></Icons>
                        
                     
             </div>
