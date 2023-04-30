@@ -13,15 +13,17 @@ const Icons =() =>{
             <div className="right_icons">
                 <TbBrandFacebook className="icon"></TbBrandFacebook>
                 <FiInstagram className="icon"></FiInstagram>
-                <ImTwitter className="icon"></ImTwitter>
-            </div>
-            <div className="left_icons">
-               
+                <ImTwitter className="icon"></ImTwitter>  
+                </div>
+                
+                <div className="left_icons"> 
                 <TiSocialSkypeOutline className="icon"/>
                 <TiSocialGooglePlus className="icon"/>
-
-            </div>
+               </div> 
+            
+            
         </div>
+        
     )
 }
 
