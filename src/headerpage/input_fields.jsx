@@ -1,6 +1,6 @@
 import "./input_filed.css"
 import {MdEditLocation,MdFilterAlt} from "react-icons/md";
-
+import Icons  from "./icons/icons";
 
 
 const Input = ()=>{
@@ -53,6 +53,8 @@ const Input = ()=>{
                 </div>
 
         </div>
+        <Icons></Icons>
+                       
         </div>
     )
 }

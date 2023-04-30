@@ -1,0 +1,25 @@
+:root{
+    --primaryColor: hsl(199,100%,33%);
+    --backColor: hsl(0,0%,100%);
+    --textColor : hsl(197, 88%, 3%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText:rgb(190,190,190);
+    --buttonColor:  hsl(199, 57%, 71%);
+    --inputColor:rgb(248, 186, 186);
+    --bodyColor: rgb(188, 153, 153);
+    --cardBG : rgb(225,225,235);
+    --secondarycolor: linear-gradient(to-left, hsl(187, 42%, 25%),hsl(199, 58%, 64%));
+    --gradienColor: linear-gradient(to-right, hsl(187, 77%, 40%),hsl(199, 84%, 53%));
+  }
+
+  $primarycolor: hsl(199,100%,33%);
+  $backcolor:hsl(0,0%,100%);
+  $textcolor:hsl(197, 88%, 3%);
+  $whiteColorDeam: hsl(0,0%,93%);
+  $greyText:rgb(190,190,190);
+  $buttoncolor: hsl(199, 57%, 71%);
+  $inputcolor:rgb(248, 186, 186);
+  $bodycolor:rgb(188, 153, 153);
+  $cardbg: rgb(225,225,235);
+  $secondarycolor: linear-gradient(to-left, hsl(187, 42%, 25%),hsl(199, 58%, 64%));
+  $gradinetcolor:linear-gradient(to-right, hsl(187, 77%, 40%),hsl(199, 84%, 53%));
