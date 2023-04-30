@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Carlito', sans-serif;
+}
+
+
+/* some varanbile names are  */
+:root{
+  --primaryColor: hsl(199,100%,33%);
+  --backColor: hsl(0,0%,100%);
+  --textColor : hsl(201,33%,16%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor: rgb(240,240,240);
+  --cardBG : rgb(225,225,235);
+  --gradienColor: linear-gradient(to-right, hsl(187,85%,43%),hsl(199,100%,33%));
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 4rem 0 2rem;
+}
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.grid{
+  display: flex;
+  align-items: center;
+}
+.btn {
+  padding: .6rem 1.5rem;
+  background: var(--gradienColor);
+  border:none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+.btn a{
+  text-decoration: none;
+  color: var(--whiteColorDeam);
+  font-weight: 500;
+}
+.btn:hover{
+  background: var(--primaryColor);
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+input{
+  font-size: 100%;
+}
+body{
+  background:var(--backColor);
+}

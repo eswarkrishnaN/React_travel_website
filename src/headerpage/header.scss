@@ -1,0 +1,63 @@
+:root{
+    --primaryColor: hsl(199,100%,33%);
+    --backColor: hsl(0,0%,100%);
+    --textColor : hsl(197, 88%, 3%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText:rgb(190,190,190);
+    --buttonColor:  hsl(199, 57%, 71%);
+    --inputColor:rgb(239,239,239);
+    --bodyColor: rgb(240,240,240);
+    --cardBG : rgb(225,225,235);
+    --secondarycolor: linear-gradient(to-left, hsl(187, 42%, 25%),hsl(199, 58%, 64%));
+    --gradienColor: linear-gradient(to-right, hsl(187, 77%, 40%),hsl(199, 84%, 53%));
+  }
+  
+  .Header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+    .overlay{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(47,106,127);
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        mix-blend-mode: hard-light;
+    }
+    video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        object-fit: cover;
+
+    }
+    .homecontent{
+        width: 100%;
+        height: max-content;
+        padding: 8rem 1.5rem 3rem;
+        display: flex;
+        row-gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        color: #fff;
+        z-index: 100;
+
+        .smalltext{
+            text-transform:uppercase ;
+        }
+        .homeTitle{
+            position: relative;
+            font-size: 30px;
+        }
+      
+    }
+  }

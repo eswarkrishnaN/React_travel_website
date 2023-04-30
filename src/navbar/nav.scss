@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Carlito', sans-serif;
+}
+
+
+/* some varanbile names are  */
+:root{
+  --primaryColor: hsl(199,100%,33%);
+  --backColor: hsl(0,0%,100%);
+  --textColor : hsl(197, 88%, 3%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --buttonColor:  hsl(199, 57%, 71%);
+  --inputColor:rgb(239,239,239);
+  --bodyColor: rgb(240,240,240);
+  --cardBG : rgb(225,225,235);
+  --secondarycolor: linear-gradient(to-left, hsl(187, 42%, 25%),hsl(199, 58%, 64%));
+  --gradienColor: linear-gradient(to-right, hsl(187, 77%, 40%),hsl(199, 84%, 53%));
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style: none;
+}
+
+.section{
+  padding: 4rem 0 2rem;
+}
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.grid{
+  display: flex;
+  align-items: center;
+}
+.btn {
+  padding: .6rem 1.5rem;
+  background: var(--buttonColor);
+  border:none;
+  outline: none;
+
+  cursor: pointer;
+  border-radius: 3rem;
+}
+.btn a{
+  text-decoration: none;
+  color: var(--whiteColorDeam);
+  font-weight: 500;
+}
+.btn:hover{
+  background: var(--primaryColor);
+  
+
+}
+
+img, video{
+  width: 100%;
+  height: auto;
+}
+input{
+  font-size: 100%;
+}
+body{
+  background:var(--backColor);
+}
+
+.header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--whiteColorDeam);
+    width: 100%;
+    padding: 16px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+
+    .log{
+        color: black;
+    }
+
+    @media screen and (max-width : 768px) {
+      
+       .navBar{
+          position: absolute;
+          height: max-content;
+          width: 80%;
+          border-radius: 1rem;
+          top:-500rem;
+          left: 50%;
+          transform: translate(-50%);
+          z-index:2000;
+          box-shadow: 0 2px 4px rgba(2,15,29,0.904);
+          transform: .3s ease-in-out;
+
+          .navlist{
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            
+            margin: auto;
+            padding: .5rem 0;
+
+            .navItem{
+                padding: .5rem 0;
+                padding: 1rem;
+
+                .navLink{
+                    font-weight: 600;
+                    color: var(--textColor);
+                    font-size: .9rem;
+
+                    &:hover{
+                        color: var(--primaryColor);
+
+                    }
+                }
+                
+            }
+            .btn{
+                margin-top: 1rem;
+
+                &:hover{
+                    color: var(--gradienColor);
+                    
+                }
+            }
+
+          }
+          .closeNavBar{
+            position: absolute;
+            top: 1rem;
+            right:.5rem;
+            color: var(--primaryColor);
+
+            &:hover{
+                color: black;
+            }
+          }
+
+      
+       }
+       .activenavbar{
+        top: 7rem;
+      }
+       .logDiv{
+            
+        .logo{
+            font-size: 25px;
+            color: var(--primaryColor);
+            justify-content: center;
+            align-items: center;
+
+            .icon{
+                font-size: 25px;
+                justify-content: center;
+                align-items: center;
+                transition: all .3s;
+
+                &:hover{
+                  color: black;
+                  transform: rotate(90);
+                }
+            }
+        }
+      }
+      .GridNavBar{
+        .icon{
+          color: var(--primaryColor);
+          transition: color .3s;
+
+          &:hover{
+            color: black;
+          }
+        }
+
+      }
+    }
+}
