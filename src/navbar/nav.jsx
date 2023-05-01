@@ -47,7 +47,9 @@ const NavBar = () =>{
                     <li className="navItem">
                         <a href="#" className="navLink">Contact</a>
                     </li>
-                    <button className='btn'><a href="#">Book Now</a> </button>
+                    <button className='btn'>
+                        <a href="#">Book Now</a> 
+                        </button>
                 </ul>
                 <div className="closeNavBar" onClick={remove} ><AiFillCloseCircle className="icon"/></div>
             </div>

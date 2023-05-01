@@ -52,7 +52,7 @@ li{
 }
 .btn {
   padding: .6rem 1.5rem;
-  background: var(--buttonColor);
+  background: rgba(44, 137, 44, 0.726);
   border:none;
   outline: none;
 
@@ -104,6 +104,7 @@ body{
           width: 80%;
           border-radius: 1rem;
           top:-500rem;
+          background-color: var(--greyText);
           left: 50%;
           transform: translate(-50%);
           z-index:2000;
