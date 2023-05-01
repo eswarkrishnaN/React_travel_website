@@ -14,7 +14,7 @@ function App() {
     event.preventDefault();
     const data ={imageur,title,loaction,grade,fees,description};
   
-    const response = await fetch('/add-data', {
+    const response = await fetch('http://127.0.0.1:5000/add-data', {
     
       method: 'Post',
       headers :{
@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className="login-form">
-      <form OnSubmitTest={from_submition} >
+      <form onSubmit={from_submition} >
         <label>
           <span>Image_url:</span>
           <input  value ={imageur} onChange={(event) => setimageurl( event.target.value)} type="url" placeholder="Url"   required />
