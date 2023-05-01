@@ -22,19 +22,27 @@ function App() {
       },
       body:JSON.stringify(data)
     });
-    const result = await response.json();
-    console.log(result);
-    if(response.ok){
-      console.log('sucess');
-    }else{
-      console.log('erroe');
-    }
+    // const result = await response.json();
+    // console.log(result);
+    // if(response.ok){
+    //   console.log('sucess');
+    // }else{
+    //   console.log('erroe');
+    // }
+
+    setDescription('')
+    setFees('')
+    setgrade('')
+    setimageurl('')
+    setitle('')
+    setlocation('')
   
   }
    
 
   return (
     <div className="login-form">
+      <h3>Enter your data upload to server</h3>
       <form onSubmit={from_submition} >
         <label>
           <span>Image_url:</span>
@@ -60,7 +68,7 @@ function App() {
           <span>Description:</span>
           <input value={description} onChange={(event) =>setDescription(event.target.value)} type="text" className="descrition"  placeholder=" enter some information" required  />
         </label>
-        <button type="submit">Log In</button>
+        <button type="submit">Submite data</button>
       </form>
     </div>
   );
