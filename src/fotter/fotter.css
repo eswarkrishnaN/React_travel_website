@@ -1,1 +1,70 @@
-/*# sourceMappingURL=fotter.css.map */
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.footer .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.footer .videoDiv video {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .videoDiv::after {
+  content: "";
+  position: absolute;
+  background: rgba(10, 84, 107, 0.307);
+  mix-blend-mode: multiply;
+}
+.footer .secContent {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2rem initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 2rem;
+  z-index: 100;
+}
+.footer .secContent .contactDiv {
+  display: flex;
+  flex-direction: column;
+}
+.footer .secContent .contactDiv .text {
+  font-size: 15px;
+  color: aliceblue;
+  text-align: center;
+}
+.footer .secContent .input {
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer .secContent .input input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border-radius: 2rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: aliceblue;
+}
+.footer .secContent .input input:focus {
+  outline: none;
+}
+.footer .secContent .input .btn {
+  font-size: 15px;
+}
+.footer .secContent .input .btn .icon {
+  font-size: 25px;
+  margin-left: 5px;
+}/*# sourceMappingURL=fotter.css.map */

@@ -1,5 +1,7 @@
 import "./main.css"
 import {useEffect,useState} from "react";
+import {GrLocation} from "react-icons/gr";
+import {HiClipboardList} from "react-icons/hi"
 const Main = () =>{
 
     const[data,setdata] =useState([]);
@@ -15,8 +17,6 @@ const Main = () =>{
               console.log(error);
             }
           }
-          console.log(data)
-
        fetchData();
      },[]);
    
@@ -24,7 +24,7 @@ const Main = () =>{
          <section className="main container section">
             <div className="sectitle">
                 <h3 className="title">
-                    Most vistied destination
+                    Most visited destination
                 </h3>
 
             </div>
@@ -33,24 +33,27 @@ const Main = () =>{
                     data.length > 0 ? data.map((item) => (
                         <div key={item.id} className="singledestination">
                             <img src={item.imageurl} alt={item.title} loading="lazy" />
+                            <div className="title">{item.title}</div>
                             <div className="contitne flex">
+                                <GrLocation className="loaction_icon"></GrLocation>
                                 <span className="location">{item.location}</span>
                             </div>
                             <div className="fees flex">
                                 <div className="grade">
-                                    <span>{item.grade}</span>
+                                    <p>{item.grade}   <span>{item.fees}</span> </p>
                                 </div>
-                                <div className="price">
-                                    <h5>{item.fees}</h5>
-                                </div>
-                                <div className="desc">
+                                
+                            </div>
+                            
+                            <div className="desc">
                                     <p>{item.description}</p>
                                 </div>
-                            </div>
+                            <button className="btn flex"> Detials <HiClipboardList className="icon"></HiClipboardList></button>
                         </div>
                     )):<p>no data avaliable we updating the server</p>
                 }
                 
+               
             </div>
 
 

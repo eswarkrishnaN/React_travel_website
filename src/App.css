@@ -73,4 +73,5 @@ input{
 }
 body{
   background:var(--backColor);
+  scroll-behavior: smooth;
 }
