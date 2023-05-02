@@ -24,20 +24,9 @@ except Exception as e:
 def add_data():
     data = request.json
     result = db.webpage1.insert_one(data)
-    #response = {'message': 'Data added successfully', 'id': str(result.inserted_id)}
-    return jsonify() ,201
+    response = {'message': 'Data added successfully', 'id': str(result.inserted_id)}
+    return jsonify(response) ,201
 
 
-
-@app.get('/get-data')
-def get_data():
-    data = []
-    collection = db['webpag1']
-    for item in collection.find():
-        data.append({
-            'id': str(item['_id']),
-            
-        })
-    return jsonify(data)
-    
-
+if __name__ =="__main__":
+    app.run(debug=True)
